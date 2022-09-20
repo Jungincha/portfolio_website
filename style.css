@@ -1,10 +1,9 @@
 /* Global */
 :root {
-  --base-color: white;
-  --lime-green: #8CAA24;
-  --dark-green: #003804;
-  --second-base-color: #B89A68;
-  --highlight-color: #F86901;
+  --base-color: #FDF0D5;
+  --light-color1: #669BBC;
+  --dark-color1: #003049;
+  --highlight-color: #C1121F;
 
 }
 
@@ -43,7 +42,7 @@ a {
 }
 
 #header .brand a:hover {
-  text-shadow: 1px 1px 3px var(--dark-green);
+  text-shadow: 1px 1px 3px var(--dark-color1);
 }
 
 #header .nav-bar {
@@ -77,7 +76,7 @@ a {
   height: 100vh;
   top: 0;
   right: -100%;
-  background-color: var(--second-base-color);
+  background-color: var(--base-color);
   transition: .5s ease;
   display: flex;
   align-items: center;
@@ -88,21 +87,21 @@ a {
   list-style: none;
   margin-bottom: 2rem;
   font-size: 1.3rem;
-  color: var(--base-color);
+  color: var(--dark-color1);
   cursor: pointer;
 }
 
 #header li a {
   text-transform: uppercase;
-  color: var(--base-color);
+  color: var(--dark-color1);
 }
 
 #header li a:hover {
-  color: var(--dark-green);
+  color: var(--highlight-color);
 }
 
 #header li:hover {
-  color: var(--dark-green);
+  color: var(--highlight-color);
 }
 
 /* End Header Section */
@@ -232,7 +231,7 @@ a {
 /* Media Query */
 
 /* Small Screen */
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
 
   /* Header Section */
   #header .fa-bars {
@@ -264,7 +263,7 @@ a {
   }
 
   #header li a:hover {
-    color: var(--lime-green);
+    color: var(--light-color1);
   }
 
   #header li {
@@ -312,6 +311,25 @@ a {
   #project a {
     flex-basis: 40%;
     margin: 20px;
+  }
+
+
+  /* End Project Section */
+}
+
+/* Extra Large device */
+@media only screen and (min-width: 1200px) {
+  /* Project Section */
+
+  #project .project-list {
+    flex-wrap: nowrap;
+  }
+
+
+
+  #project a {
+    flex-basis: 20%;
+    margin: 15px;
   }
 
 
