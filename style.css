@@ -35,7 +35,7 @@ a {
 /* Header Section */
 
 #header .brand a {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--base-color);
   transition: .3s ease;
@@ -55,6 +55,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 100;
+  transition: ease .5s;
 }
 
 #header .fa-bars {
@@ -166,6 +167,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 50px auto;
 }
 
 #project .project-list {
@@ -225,8 +227,27 @@ a {
 }
 
 
-
 /* End Project Section */
+
+/* Skill Section */
+#skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+#skill .skill-list {
+  display: flex;
+  gap: 2rem;
+}
+
+#skill .skill-list i {
+  font-size: 4rem;
+}
+
+/* End Skill Section */
 
 /* Media Query */
 
@@ -315,6 +336,18 @@ a {
 
 
   /* End Project Section */
+
+
+  /* Skill Section */
+  #skill .skill-list {
+    gap: 3rem;
+  }
+
+  #skill .skill-list i {
+    font-size: 5rem;
+  }
+
+  /* End Skill Section */
 }
 
 /* Extra Large device */
@@ -332,8 +365,19 @@ a {
     margin: 15px;
   }
 
-
   /* End Project Section */
+
+  /* Skill Section */
+  #skill .skill-list {
+    gap: 4rem;
+  }
+
+  #skill .skill-list i {
+    font-size: 7rem;
+  }
+
+  /* End Skill Section */
+
 }
 
 /* End Media Query */

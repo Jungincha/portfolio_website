@@ -4,6 +4,7 @@ const navList = document.querySelector(".nav-list");
 const xBtn = document.querySelector(".fa-xmark");
 const hamBtn = document.querySelector(".fa-bars");
 const navListItem = document.querySelectorAll(".nav-list li");
+const navBar = document.querySelector(".nav-bar");
 
 
 xBtn.addEventListener('click', navClose);
@@ -19,6 +20,15 @@ function navClose() {
 function navOpen() {
     navList.style.right = "0";
 }
+
+document.addEventListener('scroll', () => {
+    let scroll_position = window.scrollY;
+    if (scroll_position > 200) {
+        navBar.style.backgroundColor = 'var(--dark-color1)';
+    } else {
+        navBar.style.backgroundColor = 'transparent';
+    }
+})
 
 // End Header Section
 
