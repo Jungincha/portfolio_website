@@ -229,25 +229,23 @@ a {
 
 /* End Project Section */
 
-/* Skill Section */
-#skill {
+/* About Section */
+#about {
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
+}
+
+#about p {
+  width: 80%;
   margin: 50px auto;
 }
 
-#skill .skill-list {
-  display: flex;
-  gap: 2rem;
-}
+/* End About Section */
 
-#skill .skill-list i {
-  font-size: 4rem;
-}
-
-/* End Skill Section */
 
 /* Media Query */
 
@@ -333,22 +331,10 @@ a {
     flex-basis: 40%;
     margin: 20px;
   }
-
-
-  /* End Project Section */
-
-
-  /* Skill Section */
-  #skill .skill-list {
-    gap: 3rem;
-  }
-
-  #skill .skill-list i {
-    font-size: 5rem;
-  }
-
-  /* End Skill Section */
 }
+
+/* End Project Section */
+
 
 /* Extra Large device */
 @media only screen and (min-width: 1200px) {
@@ -367,16 +353,6 @@ a {
 
   /* End Project Section */
 
-  /* Skill Section */
-  #skill .skill-list {
-    gap: 4rem;
-  }
-
-  #skill .skill-list i {
-    font-size: 7rem;
-  }
-
-  /* End Skill Section */
 
 }
 
