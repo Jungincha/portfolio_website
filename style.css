@@ -138,6 +138,11 @@ a {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  transition: .5s ease;
+}
+
+#home .profile-img img:hover {
+  scale: 1.1;
 }
 
 #home .profile-intro {
@@ -244,6 +249,22 @@ a {
   margin: 50px auto;
 }
 
+#about .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .profile-icon {
+  width: 200px;
+  transition: .8s ease;
+}
+
+#about .profile-icon:hover {
+  scale: 1.1;
+}
+
 /* End About Section */
 
 
@@ -331,13 +352,41 @@ a {
     flex-basis: 40%;
     margin: 20px;
   }
+
+  /* End Project Section */
+
+  /* About Section */
+  #about .about-content {
+    flex-direction: row;
+    width: 80%;
+  }
+
+
+  #about p {
+    width: 100%;
+    margin: auto;
+    padding-left: 50px;
+  }
+
+  /* End About Section */
+
+
 }
 
-/* End Project Section */
 
 
 /* Extra Large device */
 @media only screen and (min-width: 1200px) {
+
+  /* Home Section */
+  #home .profile-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* End Home Section */
+
+
   /* Project Section */
 
   #project .project-list {
@@ -352,6 +401,17 @@ a {
   }
 
   /* End Project Section */
+
+  /* About Section */
+  #about p {
+    font-size: 1.2rem;
+  }
+
+  #about .profile-icon {
+    width: 350px;
+  }
+
+  /* End About Section */
 
 
 }

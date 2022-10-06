@@ -32,5 +32,18 @@ document.addEventListener('scroll', () => {
 
 // End Header Section
 
+// About Section
+
+// Profile picture hover change effect
+function hover(element) {
+    element.setAttribute('src', './images/profile-smile.png')
+}
+
+function unhover(element) {
+    element.setAttribute('src', './images/profile.png')
+}
+
+// End About Section
+
 
 
