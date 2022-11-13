@@ -267,6 +267,31 @@ a {
 
 /* End About Section */
 
+/* Footer Section */
+#footer {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 50px;
+}
+
+#footer .socials a {
+  text-decoration: none;
+  width: 3rem;
+  color: var(--dark-color1);
+  transition: .3s ease;
+}
+
+#footer .socials a:hover {
+  color: var(--highlight-color);
+}
+/* End Footer Section */
+
 
 /* Media Query */
 
@@ -412,7 +437,10 @@ a {
   }
 
   /* End About Section */
-
+  
+  /* Footer Section */
+  
+  /* End Footer Seciton */
 
 }
 
